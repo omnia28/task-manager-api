@@ -16,7 +16,7 @@ A simple and well-structured task management RESTful API built with **FastAPI**,
 
 ## Project Structure
 
-
+```bash
 ├── main.py     # Entry point with all API routes
 
 ├── models.py     # SQLModel database models & enums
@@ -30,6 +30,7 @@ A simple and well-structured task management RESTful API built with **FastAPI**,
 ├── requirements.txt     # List of dependencies
 
 └── README.md     # Project documentation
+```
 
 ### Assumptions
 - The API is intentionally unauthenticated to keep the implementation simple and focused
