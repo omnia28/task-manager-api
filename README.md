@@ -50,26 +50,30 @@ A simple and well-structured task management RESTful API built with **FastAPI**,
 git clone https://github.com/omnia28/task-manager-api.git
 cd task-manager-api
 ```
-### 2. Install dependencies
+
+### 2. Activate virtual environment
+```bash
+env\Scripts\activate
+```
+
+### 3. Install dependencies
 The python version used is Python 3.11
 ```bash
 pip install -r requirements.txt
 ```
-### 3. Create the database
+### 4. Create the database
 
 ```bash
 python create_db.py
 ```
-### 4. Run the application
+### 5. Run the application
 
 ```bash
 uvicorn main:app --reload
 ```
 
- ### 5. Access API Documentation
+ ### 6. Access API Documentation
 Swagger UI: http://127.0.0.1:8000/docs
-
-ReDoc: http://127.0.0.1:8000/redoc
 
  ## Example API Calls
  ### 1. Create a task
