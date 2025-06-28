@@ -103,7 +103,7 @@ async def add_a_task(
 
 
 # Retrieve a specific task by its ID
-@app.get('/tasks/{task_id}', response_model=TaskResponse)
+@app.get('/tasks/{task_id}', response_model=TaskResponse, status_code=status.HTTP_200_OK)
 async def read_task(
     task_id:int,
     session: Session = Depends(get_session)
@@ -134,7 +134,7 @@ async def read_task(
 
 
 # Update a task with the provided fields
-@app.put('/tasks/{task_id}', response_model=TaskResponse)
+@app.put('/tasks/{task_id}', response_model=TaskResponse, status_code=status.HTTP_200_OK)
 async def update_a_task(
     task_id:int,
     update_data: TaskUpdate,
