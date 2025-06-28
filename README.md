@@ -53,7 +53,12 @@ cd task-manager-api
 
 ### 2. Activate virtual environment
 ```bash
+# Install a virtual environment
+python -m venv env
+# Activate it (Windows)
 env\Scripts\activate
+# Activate it (macOS/Linux)
+source env/bin/activate
 ```
 
 ### 3. Install dependencies
